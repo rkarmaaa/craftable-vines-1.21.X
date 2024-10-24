@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "craftable-vines",
+	"version": "${version}",
+	"name": "Craftable Vines",
+	"description": "Easily craft all the vanilla vines by just using some bone meal!",
+	"authors": [
+		"rkarmaa"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/rkarmaaa/craftable-vines-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/craftable-vines/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"craftable.vines.CraftableVines"
+		],
+		"client": [
+			"craftable.vines.CraftableVinesClient"
+		],
+		"fabric-datagen": [
+			"craftable.vines.CraftableVinesDataGenerator"
+		]
+	},
+	"mixins": [
+		"craftable-vines.mixins.json",
+		{
+			"config": "craftable-vines.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

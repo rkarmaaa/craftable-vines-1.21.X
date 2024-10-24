@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:twisting_vines"
+    }
+  ],
+  "result": {
+    "id": "minecraft:twisting_vines",
+    "count": 2
+  },
+  "group": "stuff"
+}
